@@ -88,6 +88,14 @@ def disease_Net():
 	prob[1, ] = [0.65, 0.35]
 	prob[0, ] = [0.30, 0.70]
 
+	prob = zeros([pollution_Node.size()]),
+	prob[1] = [0.1]
+	prob[0] = [0.9]
+	
+	prob = zeros([smoker_Node.size()]),
+	prob[1] = [0.3]
+	prob[0] = [0.7]
+
 # Create the actual network
 def create_Network():
 	for node in disease_Net(nodes):
